@@ -1,10 +1,37 @@
 @import 'compass/reset'
 @import 'compass/css3'
 
-body
+html
   background: url("http://i.imgur.com/icUSB.png")
   font-family: 'Ubuntu', sans-serif
   color: white
+
+html.hipopoteses
+  background: url("http://i.imgur.com/XidsM.jpg") no-repeat center center
+
+.arrow_box
+  position: relative
+  background: yellow
+  &:after, &:before
+    left: 100%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+  &:after
+    border-color: rgba(213, 213, 0, 0)
+    border-left-color: yellow
+    border-width: 26px
+    top: 50%
+    margin-top: -26px
+  &:before
+    border-color: rgba(194, 225, 245, 0)
+    border-left-color: yellow
+    border-width: 32px
+    top: 50%
+    margin-top: -32px
 
 .reveal
   .slides
@@ -15,18 +42,26 @@ body
       margin-bottom: .25em
       font-size: 4.5em
     h2, h3
-      font-size: 3em
+      font-size: 2.5em
       background: #be1c58
     a
       color: cyan
       text-decoration: none
+      &:hover
+        text-decoration: underline
     img
       border: 4px solid white
+    ul
+      li
+        margin-bottom: 1em
     .alert
       color: red
       font-weight: bold
+    p
+      margin-bottom: 1em
     table
       width: 100%
+      margin-bottom: 1em
       td
         border: 1px white solid
         padding: .1em
@@ -34,3 +69,53 @@ body
         padding: .1em
         font-weight: bold
         +text-shadow(none)
+    section.hipopoteses
+      ul
+        list-style: none
+      li
+        background: yellow
+        color: black
+        font-weight: bold
+        padding: .5em
+        text-align: center
+        &.hipopoteses
+          background: #be1c58
+          color: white
+    section.dungeon
+      img
+        float: right
+    section.nature
+      img
+        width: 45%
+        &.lasanha
+          float: left
+        &.wine
+          float: right
+    section.reality 
+      .us, .filters, .world
+        width: 23%
+        padding: 5%
+        float: left
+      .perception
+        clear: both
+        span
+          background: yellow
+          color: black
+          padding: .25em
+    section.distortion, section.generalization, section.deletion
+      p
+        text-align: left
+      img
+        width: 50%
+        float: left
+        margin: 0 1em 1em 0
+    section.maps
+      img
+        width: 30%
+    section.questions
+      ul
+        float: left
+        width: 45%
+      img
+        width: 45%
+        float: right

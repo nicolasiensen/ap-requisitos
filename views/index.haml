@@ -82,30 +82,233 @@
               %td 13.9%
         %section
           %h2 O que é um requisito?
+          .fragment
+            %img{:src => "http://i.imgur.com/tlzR4.jpg?2"}
+            %p Dicionário Aurélio
         %section
-          %h2 De onde os requisitos veem?
+          %h2 Requisito de software
+          .fragment
+            %em "Uma condição ou capacidade necessária para o usuário resolver um problema ou atingir um objetivo." - 
+            %a{:href => "https://standards.ieee.org/"} standards.ieee.org
         %section
-          %h2 Foco no problema
+          %h2 Tipos de requisitos
+          %ul
+            %li.fragment Requisito de negócio (Por que?)
+            %li.fragment Requisito de usuário (O que?)
+            %li.fragment Requisito de software (Como?)
         %section
-          %h2 Software inútil
+          %h2 Requisito de negócio
+          %p.fragment Descreve uma necessidade carente de solução
+          %ul.fragment
+            %strong Exemplos:
+            %li.fragment Voltar para casa depois de uma festa em São Conrado às 6h do domingo
+            %li.fragment Pressionar o poder público para não sansionar uma lei que transforme homesexuais em criminosos
+            %li.fragment Ajudar um cantor a produzir seu novo álbum
         %section
-          %h2 Fatores críticos de sucesso num projeto de desenvolvimento de software
+          %h2 Requisito de usuário
+          %p.fragment Capacidade que a solução dará para alguém realizar uma tarefa
+          %ul.fragment
+            %strong Exemplos:
+            %li.fragment Chamar o táxi mais próximo
+            %li.fragment Enviar um email para uma pessoa pública
+            %li.fragment Colaborar com R$10,00 para um projeto
         %section
-          %h2 Os principais problemas do desenvolvimento de software por categoria
+          %section
+            %h2 Requisito de software
+            %ul
+              %li.fragment Requisito funcional
+              %li.fragment Requisito não-funcional
+          %section
+            %h2 Requisito funcional
+            %p.fragment Comportamento da solução para que a tarefa do usuário seja realizada com sucesso
+            %ul.fragment
+              %strong Exemplos:
+              %li.fragment Notificar o taxi mais próximo sobre um novo passageiro
+              %li.fragment Contabilizar quantas vezes uma pessoa pública recebeu emails
+              %li.fragment Confirmar a transação junto ao gateway de pagamento
+          %section
+            %h2 Requisito não-funcional
+            %p.fragment Detalhes técnicos como: atributos de qualidade, restrições de design ou implementação
+            %ul.fragment
+              %strong Exemplos:
+              %li.fragment A notificação deve ser gerada em menos de 30 segundos
+              %li.fragment O sistema de emails deve estar protegido para não ser enquadrado como spam
+              %li.fragment Cancelar a colaboração caso a transação não se confirme
         %section
+          %h2 Problema x solução
+          %img{:src => "http://i.imgur.com/HMheb.jpg"}
+          %p
+            %a{:href => "http://vimeo.com/38132933"} Replacing Requirements with Hypotheses - Josh Seiden
+        %section
+          %section.hipopoteses{"data-state" => "hipopoteses"}
+            %h2 Hipopóteses
+            %ul
+              %li.fragment Requisito de negócio
+              %li.hipopoteses.fragment Hipótese
+              %li.fragment Requisito de usuário
+              %li.fragment Requisito de software
+          %section
+            %p Algumas verdades sobre problema x solução:
+            %ul
+              %li.fragment
+                %em When you give a team a problem, you engage their creativity. When you give a team a solution, they became ticket takers. - 
+                %a{:href => "http://vimeo.com/38132933"} Replacing Requirements with Hypotheses - Josh Seiden
+              %li.fragment
+                %em A problem well stated is a problem half solved - 
+                %a{:href => "http://pt.wikipedia.org/wiki/Charles_Kettering"} Charles Kettering
+              %li.fragment
+                %em Requirements don’t exist in a vacuum - 
+                %a{:href => "http://www.businessanalyst.com/business-analyst-what-is-the-job/"} Business Analyst: What is the Job?
+              %li.fragment
+                %em If I had an hour to solve a problem I'd spend 55 minutes thinking about the problem and 5 minutes thinking about solutions - 
+                %a{:href => "http://www.goodreads.com/quotes/60780-if-i-had-an-hour-to-solve-a-problem-i-d"} Albert Einstein
+        %section.dungeon
           %h2 Analista de negócios
+          %ul
+            %li.fragment Facilitador
+            %li.fragment Ajuda a definir os problemas
+            %li.fragment Questiona pra c*@!lho
+          %img.fragment{:src => "http://i.imgur.com/9ag2H.jpg"}
         %section
-          %h2 As famílias de requisitos
+          %h2 Captando requisitos
+          %ul
+            %li.fragment Entrevistas
+            %li.fragment Protótipos exploratórios
+            %li.fragment Observação em campo
+            %li.fragment Estudo de documentação
+            %li.fragment Pesquisa e questionários
+            %li.fragment.alert Workshops Facilitados
+        %section.nature
+          %h2 A natureza implícita
+          %img.fragment.lasanha{:src => "http://i.imgur.com/xRm4U.jpg"}
+          %img.fragment.wine{:src => "http://i.imgur.com/YSBvJ.jpg"}
+        %section.reality
+          %h2 Como entendemos a realidade
+          .world
+            %img{:src => "http://i.imgur.com/fDPfY.jpg"}
+            %p Mundo em que vivemos
+          .filters
+            %img{:src => "http://i.imgur.com/4ozWO.jpg"}
+            %p Filtros de restrição
+          .us
+            %img{:src => "http://i.imgur.com/7DDVy.jpg?1"}
+            %p Como entendemos
+          .perception
+            %span.arrow_box.fragment Percepção
         %section
-          %h2 Requisitos de negócio
+          %section
+            %h2 Filtros de restrição
+          %section
+            %h2 Restrições neurológicas
+            %img{:src => "http://i.imgur.com/W98l5.png"}
+          %section
+            %h2 Restrições sociais
+            %img{:src => "http://i.imgur.com/HHXSw.jpg"}
+          %section
+            %h2 Restrições individuais
+            %img{:src => "http://i.imgur.com/4t4BZ.jpg"}
         %section
-          %h2 Requisitos de usuário
+          %section
+            %h2 Depois da percepção
+          %section.generalization
+            %h2 Generalização
+            %img.fragment{:src => "http://i.imgur.com/08MZ5.png"}
+            %p.fragment É a capacidade de se aprender rápido, com poucas experiências.
+            %p.fragment.alert ￼Mas é a fonte de criação de nossas crenças e valores
+          %section.deletion
+            %h2 Deleção
+            %img.fragment{:src => "http://i.imgur.com/ONJFC.jpg"}
+            %p.fragment É a capacidade de concentrar a atenção consciente para um determinado foco.
+            %p.alert.fragment ￼Mas é uma fonte de risco em nossos projetos
+          %section.distortion
+            %h2 Distorção
+            %img{:src => "http://i.imgur.com/TB4ao.png"}
+            %p.fragment É a capacidade de acrescentar ou remover partes do percebido para dar-lhe um sentido lógico, estético ou ético.
+            %p.fragment.alert ￼Mas é uma fonte de desperdícios para nossos produtos
+        %section.maps
+          %h2 Requisitos são mapas
+          %img{:src => "http://i.imgur.com/2RVoo.png"}
+          %img{:src => "http://i.imgur.com/Gymtx.jpg?1"}
+          %p 
+            %strong O mapa não é o território!
+          %p.fragment Os requisitos representam o mapa que irá nos conduzir ao verdadeiro destino: o produto de software!
         %section
-          %h2 Requisitos da solução
+          %h2 Impacto da comunicação
+          %table
+            %tr
+              %td Palavras
+              %td 7%
+            %tr
+              %td.alert Sons
+              %td.alert 38%
+            %tr
+              %td.alert Fisiologia
+              %td.alert 55%
+          %p Mehrabian y Ferris (1967), Inference of attitutes from nonverbal communication in two channels
+        %section.questions
+          %h2 Perguntas de precisão
+          %ul
+            %li.fragment Acessar informações deletadas, distorcidas e generalizadas
+            %li.fragment Acessar a estrutura profunda (inconsciente)
+            %li.fragment Acessar o “mapa”, a interpretação do território
+          %img.fragment{:src => "http://i.imgur.com/MYyDe.jpg"}
         %section
-          %h2 Roadmap dos requisitos
+          %section
+            %h2 Deleção
+          %section
+            %h3 Omissão simples
+            %p Faltam informações:
+            %p.fragment - Eu tenho medo!
+            %p.fragment - Medo de que ou de quem?
+          %section
+            %h3 Omissão comparativa
+            %p Uma comparação está sendo feita, mas o padrão de comparação não está claro:
+            %p.fragment - O novo sistema é muito lento!
+            %p.fragment - Muito lento comparado a quê?
+          %section
+            %h3 Julgamento
+            %p Algo está sendo julgado, mas não está claro quem está fazendo o julgamento e qual o padrão que está sendo usado:
+            %p.fragment - É assim que vocês devem gerenciar o projeto!
+            %p.fragment - Baseado em que você diz isso?
         %section
-          %h2 Elicitação de requisitos
+          %section
+            %h2 Generalização
+          %section
+            %h3 Quantificador universal
+            %p Palavras como "sempre", "nunca", "todo mundo" e "ninguém" são usadas como se não houvesse exceção:
+            %p.fragment - Usuários sempre complicam os projetos!
+            %p.fragment - Sempre mesmo? Nunca houve um usuário que não complicou o projeto?
+          %section
+            %h3 Operador modal de necessidade
+            %p Palavras como "deveria" e "não deveria", "deve" e "não deve", "tenho" e "não tenho" implicam uma regra necessária:
+            %p.fragment - Você não deveria mudar o escopo do projeto! 
+            %p.fragment - O que aconteceria se eu mudasse o escopo?
+          %section
+            %h3 Operador modal de possibilidade
+            %p ￼￼Palavras como "pode" e "não pode", "capaz" e "incapaz", "consigo" e "não consigo" estabelecem regras sobre o que é possível:
+            %p.fragment - Não consigo testar o código!
+            %p.fragment - O que te impede de fazer isso?
+        %section
+          %section
+            %h2 Distorção
+          %section
+            %h3 Causa-efeito
+            %p Supõe-se que o comportamento de uma coisa automaticamente causa efeito em outra:
+            %p.fragment - Esse projeto não vai dar certo se utilizarmos tecnologia Java!
+            %p.fragment - Como o fato de utilizarmos tecnologia Java implica este projeto de não dar certo?
+          %section
+            %h3 Leitura da mente
+            %p ￼￼O estado emocional de outra pessoa é pressuposto sem uma evidência:
+            %p.fragment - O gerente não gosta de mim!
+            %p.fragment - Como você sabe que ele não gosta de ti?
+          %section
+            %h3 Leitura da mente inversa
+            %p Supõe-se que outros podem (e devem) ler sua mente e agir de acordo:
+            %p.fragment - Se você me ouvisse, me entenderia melhor!
+            %p.fragment - Como você sabe que eu não ouço você?
+        %section
+          %h2 Obrigado!
+          %img{:src => "http://i.imgur.com/ZmEUW.gif"}
     %script{:src => "js/reveal.js"}
     :javascript
       Reveal.initialize({rollingLinks: false, history: true});
